@@ -4,9 +4,13 @@
             "name": "Win32",
             "includePath": [
                 "C:\\Users\\kmillien\\MyWork\\earth-moon-transfer\\include",
+                "C:\\Users\\kmillien\\AppData\\Local\\Programs\\Python\\Python311\\include",
+                "C:\\Users\\kmillien\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\numpy\\core\\include\\numpy",
                 "${workspaceFolder}/include/",
                 "${workspaceFolder}/include/planets",
-                "${workspaceFolder}/src"
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/include/visuals",
+                "C:/Users/kmillien/AppData/Local/Programs/Python/Python311/Lib/site-packages/numpy/core/include"
             ],
             "defines": [
                 "_DEBUG",
@@ -17,7 +21,8 @@
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64",
-            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe"
+            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4

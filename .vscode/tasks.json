@@ -8,10 +8,17 @@
                 "-fdiagnostics-color=always",
                 "-I\"C:\\Users\\kmillien\\MyWork\\earth-moon-transfer\\include\"",
                 "-I\"C:\\Users\\kmillien\\MyWork\\earth-moon-transfer\\include\\planets\"",
+                "-I\"C:\\Users\\kmillien\\MyWork\\earth-moon-transfer\\include\\visuals\"",
                 "-I\"C:\\Users\\kmillien\\MyWork\\earth-moon-transfer\\src\"",
+
+                "-I\"C:\\Users\\kmillien\\AppData\\Local\\Programs\\Python\\Python311\\include\"",
+                "-I\"C:\\Users\\kmillien\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\numpy\\core\\include\"",
+                "-I\"C:\\Users\\kmillien\\AppData\\Local\\Programs\\Python\\Python311\\libs\"",
+
                 "-g",
                 "${fileDirname}\\**.cpp",
                 "${fileDirname}\\planets\\**.cpp",
+                "${fileDirname}\\visuals\\**.cpp",
                 //"${fileDirname}\\**.h",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"

@@ -18,8 +18,10 @@ class Simulator{
     // Method to display the current state of the simulation
     void  displaySimulationState() const;
 
+    void updateSimulationVisuals();
+
     // Method to handle user interactions (if any)
-    void handleUserInteractions() {} 
+    void handleUserInteractions();
 
     // Add any additional methods or functionalities here as needed.
 };

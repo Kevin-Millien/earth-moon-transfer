@@ -29,14 +29,14 @@ int main() {
     DateTime date;
     Simulator simulator (date);
 
-    //Start the simulation
-    // simulator.runSimulation();
+    // Start the simulation
+    simulator.runSimulation();
 
     // Display a goodbye message or summary (optional)
     displayGoodbyeMessage();
 
-    // Visuals obj;
-    // obj.plot();
+    Visuals obj;
+    obj.plot();
 
     return 0;
 }

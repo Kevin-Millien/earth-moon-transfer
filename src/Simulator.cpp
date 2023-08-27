@@ -19,7 +19,7 @@ Simulator::Simulator(DateTime date) {
 void Simulator::runSimulation() {
     // Set up the simulation parameters
     double timeStep = 1; // 1 day
-    double totalTime = 5; // Adjust the total simulation time as required
+    double totalTime = 1; // Adjust the total simulation time as required
     int numSteps = static_cast<int>(totalTime / timeStep);
 
     // Main simulation loop
@@ -34,6 +34,9 @@ void Simulator::runSimulation() {
 
         // Display the current state of the simulation
         displaySimulationState();
+
+        // Display the current state of the simulation
+        updateSimulationVisuals();
 
         // Optionally, include a pause to control the simulation speed
         // You can use a library like <chrono> to add a delay here
@@ -53,6 +56,10 @@ void Simulator::displaySimulationState() const {
     std::cout << std::scientific;
     std::cout << "Moon Position (x,y,z): (" << moon.position.x <<","<< moon.position.y << ","<< moon.position.z << ")" << std::endl;
     std::cout << "Moon Speed (x,y,z): (" << moon.speed.x <<","<< moon.speed.y << ","<< moon.speed.z << ")" << std::endl;
+}
+
+void  Simulator::updateSimulationVisuals() {
+    std::cout << "Look at my nice graph please, thanks :)pip3";
 }
 
 // // Method to handle user interactions (if any)
