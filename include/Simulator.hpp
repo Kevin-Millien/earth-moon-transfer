@@ -3,11 +3,13 @@
 #include "DateTime.hpp"
 #include <iostream>
 #include "Moon.hpp"
+#include "Visuals.hpp"
 
 class Simulator{
     public:
         DateTime currentTime;
         Moon moon;
+        Visuals SimulationVisuals;
 
     // Constructor to initialize the simulator
     Simulator(DateTime date);

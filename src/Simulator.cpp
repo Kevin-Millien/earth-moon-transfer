@@ -4,6 +4,9 @@
 #include "DateTime.hpp"
 #include <iostream>
 #include <iomanip>      // std::setprecision
+#include <vector>
+
+
 
 // Constructor to initialize the simulator
 Simulator::Simulator(DateTime date) {
@@ -13,13 +16,18 @@ Simulator::Simulator(DateTime date) {
     std::cout << std::scientific << std::setprecision(16);
     std::cout << "Moon initial Position (x,y,z): (" << moon.position.x <<","<< moon.position.y << ","<< moon.position.z << ")" << std::endl;
     std::cout << "Moon Initial Speed (x,y,z): (" << moon.speed.x <<","<< moon.speed.y << ","<< moon.speed.z << ")" << std::endl;
+    SimulationVisuals = Visuals(3);
+    std::vector<double> vec {moon.position.x,moon.position.y,moon.position.z};
+    SimulationVisuals.createPlot(vec);
+    
+
 }
 
 // Method to start the simulation
 void Simulator::runSimulation() {
     // Set up the simulation parameters
-    double timeStep = 1; // 1 day
-    double totalTime = 1; // Adjust the total simulation time as required
+    double timeStep = 0.5; // 1 day
+    double totalTime = 50; // Adjust the total simulation time as required
     int numSteps = static_cast<int>(totalTime / timeStep);
 
     // Main simulation loop
@@ -59,7 +67,12 @@ void Simulator::displaySimulationState() const {
 }
 
 void  Simulator::updateSimulationVisuals() {
-    std::cout << "Look at my nice graph please, thanks :)pip3";
+    std::cout << "Look at my nice graph please, thanks :)" << std::endl;
+    
+    // Visuals plot(3);
+    std::vector<double> vec {moon.position.x,moon.position.y,moon.position.z};
+    SimulationVisuals.updatePlot(vec);
+
 }
 
 // // Method to handle user interactions (if any)

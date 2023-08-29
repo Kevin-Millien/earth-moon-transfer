@@ -1,7 +1,5 @@
 #include "Simulator.hpp"
 #include "DateTime.hpp"
-#include "Visuals.hpp"
-
 #include <iostream>
 #include <string>
 
@@ -30,13 +28,10 @@ int main() {
     Simulator simulator (date);
 
     // Start the simulation
-    simulator.runSimulation();
+    simulator.runSimulation( );
 
     // Display a goodbye message or summary (optional)
     displayGoodbyeMessage();
-
-    Visuals obj;
-    obj.plot();
 
     return 0;
 }

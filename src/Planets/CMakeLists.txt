@@ -3,6 +3,5 @@ file(GLOB Sources
 )
 
 add_library(Planets ${Sources})
-target_link_libraries(Planets PRIVATE src)
+target_link_libraries(Planets PUBLIC src)
 
-target_include_directories(Planets PUBLIC "../" "../../include" "../../include/Planets" )

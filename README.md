@@ -7,6 +7,8 @@ Start [1st january 2018] - > End [1st January 2023]
 Movement calculator
 Runge Kutta Integration metho
 
+# Build Tips and Dependencies
+https://github.com/alandefreitas/matplotplusplus
 
 # Useful links
 https://space.stackexchange.com/questions/18718/calculating-positions-of-moons-ascending-and-descending-nodes-from-ephemeris-fi
@@ -28,3 +30,6 @@ https://ssd.jpl.nasa.gov/horizons/app.html#/
 
 ## How to make and then deploy a C++ application online and host it on Github pages(Github pages doc is also needed)
 https://nlesc-jcer.github.io/cpp2wasm/#/?id=javascript-web-application
+
+Common issues I might encouter
+https://codereview.stackexchange.com/questions/234331/modelling-solar-system-runge-kutta-4-n-body-problem

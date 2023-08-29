@@ -3,9 +3,6 @@
 #include "Constants.cpp"
 #include <iostream>
 
-
-
-
    Moon::Moon()
    {
       std::cout << "Initializing Moon" <<std::endl;
